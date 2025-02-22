@@ -16,9 +16,9 @@ public class ProgressCircleUI extends BasicProgressBarUI {
 
     public ProgressCircleUI(Progress pro) {
         this.pro = pro;
-        imageDown = new ImageIcon(getClass().getResource("/com/raven/icon/down.png")).getImage();
-        imageCancel = new ImageIcon(getClass().getResource("/com/raven/icon/cancel.png")).getImage();
-        imageFile = new ImageIcon(getClass().getResource("/com/raven/icon/file.png")).getImage();
+        imageDown = new ImageIcon(getClass().getResource("resources/images/icon/down.png")).getImage();
+        imageCancel = new ImageIcon(getClass().getResource("resources/images/icon/cancel.png")).getImage();
+        imageFile = new ImageIcon(getClass().getResource("resources/images/icon/file.png")).getImage();
     }
 
     @Override

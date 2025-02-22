@@ -1,12 +1,11 @@
 package com.jamesli.form;
 
 import com.jamesli.swing.ScrollBar;
-import com.raven.component.MenuButton;
-
+import com.jamesli.component.MenuButton;
 import javax.swing.*;
+import javax.swing.JPanel;
 
-
-public class MenuLeft extends javax.swing.JPanel {
+public class MenuLeft extends JPanel {
     private MenuButton menuButton1, menuButton2, menuButton3,menuBox,menuGroup, menuMessage;
     private JLayeredPane menu;
     private JLayeredPane menuList;
@@ -70,8 +69,8 @@ public class MenuLeft extends javax.swing.JPanel {
         menu.setOpaque(true);
         menu.setLayout(new java.awt.GridLayout(1, 3));
 
-        menuMessage.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/message_selected.png"))); // NOI18N
-        menuMessage.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/message.png"))); // NOI18N
+        menuMessage.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/resources/images/message_selected.png")));
+        menuMessage.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/resources/images/message.png")));
         menuMessage.setSelected(true);
         menuMessage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,9 +79,9 @@ public class MenuLeft extends javax.swing.JPanel {
         });
         menu.add(menuMessage);
 
-        menuGroup.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/group.png"))); // NOI18N
-        menuGroup.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/group_selected.png"))); // NOI18N
-        menuGroup.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/group.png"))); // NOI18N
+        menuGroup.setIcon(new javax.swing.ImageIcon(getClass().getResource("resources/images/group.png")));
+        menuGroup.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("resources/images/group_selected.png")));
+        menuGroup.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("resources/images/group.png")));
         menuGroup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuGroupActionPerformed(evt);
@@ -90,9 +89,9 @@ public class MenuLeft extends javax.swing.JPanel {
         });
         menu.add(menuGroup);
 
-        menuBox.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/box.png"))); // NOI18N
-        menuBox.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/box_selected.png"))); // NOI18N
-        menuBox.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/box.png"))); // NOI18N
+        menuBox.setIcon(new javax.swing.ImageIcon(getClass().getResource("resources/images/icon/box.png")));
+        menuBox.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("resources/images/box_selected.png")));
+        menuBox.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("resources/images/box.png")));
         menuBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuBoxActionPerformed(evt);

@@ -1,7 +1,7 @@
 package com.jamesli.components;
 
 import com.jamesli.component.ChatItem;
-
+import javax.swing.GroupLayout;
 import javax.swing.*;
 
 public class ChatLeft extends JLayeredPane{
@@ -21,9 +21,9 @@ public class ChatLeft extends JLayeredPane{
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
-        txt = new com.raven.component.Chat_Item();
+        txt = new ChatItem();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        GroupLayout layout = new GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
